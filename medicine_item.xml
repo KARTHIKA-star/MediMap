@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFEFFF"
+    tools:context=".MedicineItemActivity">
+
+    <!-- ScrollView to make the page scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Vertical LinearLayout for stacking the sections -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Section Title for Medicines -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicines"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingBottom="8dp" />
+
+            <!-- Horizontal Scroll for Medicine Items -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <!-- Row for Medicines -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- All cards set to same height and width -->
+                    <!-- Medicine 1 -->
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images2"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_6" />
+
+                        <TextView
+                            android:id="@+id/items_names2"
+                            android:layout_width="175dp"
+                            android:layout_height="21dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Paracetamol Tablets"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 45.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Medicine 2 -->
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images1"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_7" />
+
+                        <TextView
+                            android:id="@+id/items_names1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Ibuprofen"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 40.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Medicine 3 -->
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images3"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_8" />
+
+                        <TextView
+                            android:id="@+id/items_names3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Aspirin"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 32.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Medicine 4 -->
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images4"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_9" />
+
+                        <TextView
+                            android:id="@+id/items_names4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Amoxicillin"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 59.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Medicine 5 -->
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images5"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_14" />
+
+                        <TextView
+                            android:id="@+id/items_names5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Penicillin"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 90.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Section Title for Children -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Children's Medicines Scroll -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Example Children's Medicine Card -->
+                    <LinearLayout
+                        android:layout_width="181dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_32" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Evion 400"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="₹ 23.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="187dp"
+                        android:layout_height="201dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images6"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_33" />
+
+                        <TextView
+                            android:id="@+id/items_names6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="D-Rise 60K Capsule"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 40.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images7"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_34" />
+
+                        <TextView
+                            android:id="@+id/items_names7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="D-Rise 60K Capsule"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 40.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images8"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_35" />
+
+                        <TextView
+                            android:id="@+id/items_names8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Neurobion Forte"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 50.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images9"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_36" />
+
+                        <TextView
+                            android:id="@+id/items_names9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Vitamin C Capsules"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 80.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images10"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_37" />
+
+                        <TextView
+                            android:id="@+id/items_names10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Saridon"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 70.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Children's Medicines Scroll -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Example Children's Medicine Card -->
+                    <LinearLayout
+                        android:layout_width="181dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_38" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Digene Acidity and Gas Relief"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="₹ 23.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="187dp"
+                        android:layout_height="201dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images11"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_39" />
+
+                        <TextView
+                            android:id="@+id/items_names11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="OFLOXACIN AND ORNIDAZOLE TABLETS"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 40.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images12"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_40" />
+
+                        <TextView
+                            android:id="@+id/items_names12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Ofloxacin and Ornidazole"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 40.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images13"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_53" />
+
+                        <TextView
+                            android:id="@+id/items_names13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Acetaminophen"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 50.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images14"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_54" />
+
+                        <TextView
+                            android:id="@+id/items_names14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="ThroatCalm."
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 80.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images15"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_55" />
+
+                        <TextView
+                            android:id="@+id/items_names15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Acetaminophen"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10 Tablets"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 70.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+    <!-- Footer Section with Two Buttons -->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F5F5F5"
+        android:padding="12dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnSyrups"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Syrups"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginEnd="8dp"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

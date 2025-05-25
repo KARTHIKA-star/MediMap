@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFEFFF"
+    tools:context=".SyrupsActivity">
+
+    <!-- ScrollView to make the page scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Vertical LinearLayout for stacking the sections -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Section Title for Medicines -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Syrups"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingBottom="8dp" />
+
+            <!-- Horizontal Scroll for Medicine Items -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <!-- Row for Medicines -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- All cards set to same height and width -->
+                    <!-- Medicine 1 -->
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images2"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_18" />
+
+                        <TextView
+                            android:id="@+id/items_names2"
+                            android:layout_width="175dp"
+                            android:layout_height="21dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Cofsils Naturals Cough Syrup"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text=" 100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 145.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Medicine 2 -->
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="210dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images1"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_27" />
+
+                        <TextView
+                            android:id="@+id/items_names1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Medibest Kids Cold 'n Cough Daytime"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 230.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Medicine 3 -->
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images3"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_28" />
+
+                        <TextView
+                            android:id="@+id/items_names3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Medibest Kids Cold 'n Cough Daytime"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="200 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 432.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Medicine 4 -->
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images4"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_29" />
+
+                        <TextView
+                            android:id="@+id/items_names4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Vicks Cough Syrup"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 359.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Medicine 5 -->
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images5"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_30" />
+
+                        <TextView
+                            android:id="@+id/items_names5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Prospan Cough Syrup"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 190.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Section Title for Children -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Children's Medicines Scroll -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Example Children's Medicine Card -->
+                    <LinearLayout
+                        android:layout_width="181dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_31" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Mucotin Child Syrup"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="₹ 230.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="187dp"
+                        android:layout_height="201dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images6"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_56" />
+
+                        <TextView
+                            android:id="@+id/items_names6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Zincovit Syrup"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="200 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 143.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images7"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_57" />
+
+                        <TextView
+                            android:id="@+id/items_names7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Herbodil Cough Syrup"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 80.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images8"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_58" />
+
+                        <TextView
+                            android:id="@+id/items_names8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Zecuf Herbal Cough Remedy"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 150.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images9"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_59" />
+
+                        <TextView
+                            android:id="@+id/items_names9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Montair LC Kid Syrup"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 380.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images10"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_60" />
+
+                        <TextView
+                            android:id="@+id/items_names10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Himalaya Koflet Cough Syrup"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 270.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Children's Medicines Scroll -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Example Children's Medicine Card -->
+                    <LinearLayout
+                        android:layout_width="181dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_61" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Zedex Cough Syrup"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="₹ 213.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="187dp"
+                        android:layout_height="201dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images11"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_62" />
+
+                        <TextView
+                            android:id="@+id/items_names11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Baidyanath Kasamrit Herbal Cough Syrup"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 420.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images12"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_62" />
+
+                        <TextView
+                            android:id="@+id/items_names12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Nasoclear Coughgo"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 240.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images13"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_64" />
+
+                        <TextView
+                            android:id="@+id/items_names13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Ovaryl Forte Sugar Free Syrup"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 350.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images14"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_65" />
+
+                        <TextView
+                            android:id="@+id/items_names14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Ascoril D Plus Sugar Free Syrup"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="10o ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 230.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFFFF"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/items_images15"
+                            android:layout_width="126dp"
+                            android:layout_height="98dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_66" />
+
+                        <TextView
+                            android:id="@+id/items_names15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Crocin 120 Suspension"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/items_quantity15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="100 ml"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/items_prices15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 170.00"
+                            android:textColor="#007AFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+    <!-- Footer Section with Two Buttons -->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F5F5F5"
+        android:padding="12dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnSyrups"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Medicines"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginEnd="8dp"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
